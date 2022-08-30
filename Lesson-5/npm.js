@@ -13,4 +13,9 @@
 // npm init (step by step, press enter to skip)
 // npm init -y (everything default)
 // 
-//
+
+
+const lodash = require('lodash');
+
+var items = [1, [2, [3, [4]]]];
+console.log(lodash.flattenDeep(items));
