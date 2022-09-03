@@ -39,7 +39,7 @@ app.get('/api/v1/query', (req, res) => {
 		sortedProducts = sortedProducts.slice(0, Number(limit));
 	}
 
-	res.status(200).json(sortedProducts);
+	return res.status(200).json(sortedProducts);
 });
 
 app.listen(5000, () => {
