@@ -42,3 +42,5 @@ router.delete('/:id', (req, res) => {
   return res.status(200).json({success: true, data: newPeople})
   
 })
+
+module.exports = router;
